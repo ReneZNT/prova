@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Olá Mundo</title>
+        <meta http-equiv="Content-Security-Policy"
+        content="script-src'self''unsafe-inline';"/>
+    </head>
+    <body>
+        <h1>Soma de 2 números</h1>
+        <input placeholder="Insira um número" id="n1">
+        <input placeholder="Insira o segundo número" id="n2">
+        <button onclick="somar()">Somar</button>
+        <h2 id="resposta">Resposta</h2>
+    </body>
+</html>
+
+<script>
+    somar = function(){
+        var n1 = document.getElementById('n1').value;
+        var n2 = document.getElementById('n2').value;
+        document.getElementById("resposta").innerHTML = parseInt(n1) + parseInt(n2);
+    }
+</script>
